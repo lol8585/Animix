@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@100;400&family=Montserrat&family=Poppins&family=Ubuntu&display=swap');
+@import "header.css";
+
+/*____Section____*/
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13vh 0;
+    font-family: lato;
+}
+.logo {
+    width: 70px;
+}
+
+/*Login part*/
+input:focus {
+    border-color: rgb(48, 200, 119);
+}
+.login {
+    border-radius: 12px;
+    background: rgb(246, 246, 246);
+    margin: 0 auto;
+    width: 360px;
+    height: 500px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 20px 3px rgb(224, 224, 224);
+    padding: 0 30px;
+}
+.login_logo {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.login_logo h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(87, 87, 87);
+}
+.login_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.login_inputs input, .signup_inputs input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+.pass_input {
+    margin-bottom: 5px !important;
+}
+.login_inputs p {
+    margin-bottom: 30px;
+}
+.submit {
+    text-align: center;
+    background: rgb(48, 200, 119);
+    border: none !important;
+    border-radius: 3px !important;
+    font-size: 18px;
+    color: white;
+    font-family: lato;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.submit:hover {
+    background: rgb(62, 173, 114);
+}
+
+
+/*Signup Part*/
+.signup {
+    border-radius: 12px;
+    width: 360px;
+    margin: 0 auto;
+    height: 500px;
+    background: rgb(246, 246, 246);
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 20px 3px rgb(224, 224, 224);
+    padding: 0 30px;
+}
+
+.signuptitle {
+    margin: 30px 0;
+    color: rgb(87, 87, 87);
+}
+.signup_inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.or {
+    font-size: 40px;
+}
+
+@media (max-width: 940px) {
+    .section {
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px) {
+    .login, .signup {
+        width: 90%;
+        padding: 0 20px;
+    }
+}

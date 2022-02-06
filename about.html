@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>About us</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="title">
+            <img src="images/icon.png">
+            <h1> <a href="home.html">Animix</a></h1>
+        </div>
+        <i class="fas fa-home home" id="home"></i>
+        <nav id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blank_page.html">Albums</a></li>
+                <li><a href="blank_page.html">Library</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="signUp" href="Login.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        // Responsive Navbar 
+        var nav = document.getElementById("navbar");
+        var home = document.getElementById("home");
+
+        home.addEventListener('click', function () {
+            if (nav.style.height === "100vh") {
+                nav.style.height = "0vh";
+            } else {
+                nav.style.height = "100vh";
+            }
+        })
+
+    </script>
+
+    <!-- tailwind code -->
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-10">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">This website is made by two pepole <b>Aman Rai</b>
+                    the Back-end Web developer and <b>Raman Bhardwaj</b> The Front-end Web developer...</p>
+            </div>
+            <div class="flex flex-wrap m-4">
+                <div class="p-4 lg:w-1/2">
+                    <div
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team"
+                            class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                            src="images/aman.jpg">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Aman</h2>
+                            <h3 class="text-gray-500 mb-3">Back-end web developer</h3>
+                            <p class="mb-4">"I will not let my Friends down. I will protect you with my life.
+                                Mark my word."</p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div
+                        class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team"
+                            class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                            src="images/raman.jpg">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Raman</h2>
+                            <h3 class="text-gray-500 mb-3">Front-end web developer</h3>
+                            <p class="mb-4">Being strong isn't just about having power or move, it about one's spirit.
+                                When I decided to follow my dream, I had already discarded my life.</p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <a class="ml-2 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                        <path
+                                            d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- lolololol -->
+
+                <section class="text-gray-600 body-font">
+                    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+                            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                                1</div>
+                            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                                <div
+                                    class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">What is Animix?</h2>
+                                    <p class="leading-relaxed">Animix is Free open source Music Website. It will be much bigger soon.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                                2</div>
+                            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                                <div
+                                    class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">How secure is Animix?
+                                    </h2>
+                                    <p class="leading-relaxed">Animix is more secure than mass market Music site like
+                                        Spotify and Amazon music.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+                            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                                3</div>
+                            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                                <div
+                                    class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none"
+                                        viewBox="-5 -5 34 34" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1}
+                                            d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+                                    </svg>
+                                </div>
+                                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Updates</h2>
+                                    <p class="leading-relaxed">
+                                        Will add volume bar,
+                                        Animations,
+                                        Artist's names,
+                                        and Download Music Feature.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+                            <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                            </div>
+                            <div
+                                class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">
+                                4</div>
+                            <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+                                <div
+                                    class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                    <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Who is Animix for?
+                                    </h2>
+                                    <p class="leading-relaxed">Animix is for everyone who wants fast and reliable Music
+                                        listning site.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Script Links -->
+                <script src="https://kit.fontawesome.com/3595c82e60.js" crossorigin="anonymous"></script>
+                <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/29382277be.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/icon.png">
+    <title>Login or SignUp - Animix</title>  
+    <!-- bye bye conice sad -->
+</head>
+<body>
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="title">
+            <img src="images/icon.png">
+            <h1> <a href="home.html">Animix</a></h1>
+        </div>
+        <i class="fas fa-home home" id="home"></i>
+        <nav id="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blank_page.html">Albums</a></li>
+                <li><a href="blank_page.html">Library</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="signUp" href="Login.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        </nav>
+    </div>
+    <script>
+        // Responsive Navbar 
+        var nav = document.getElementById("navbar");
+        var home = document.getElementById("home");
+
+        home.addEventListener('click', function () {
+            if (nav.style.height === "100vh") {
+                nav.style.height = "0vh";
+            } else {
+                nav.style.height = "100vh";
+            }
+        })
+
+    </script>
+
+    <div class="section">
+            <!-- <div class="login">
+                <div class="login_logo">
+                    <h2>Login</h2>
+                    <img src="images/logo.png"class="logo">
+                </div>
+
+                <div class="login_inputs">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" class="pass_input" required>
+                    <p>Forgot password?</p>
+                    <input type="submit" class="submit" value="Login"> 
+                </div>
+                <p>&copy; 2022 All Rights Reserved.</p>
+            </div>
+
+            <div class="or">
+                <h2>OR</h2>
+            </div> -->
+
+            <div class="signup">
+                <div class="signuptitle">
+                    <h2>Sign Up</h2>
+                </div>
+                
+                <div class="signup_inputs">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="email" placeholder="Enter Email" required>
+                    <input type="password" placeholder="Set Password" required>
+                    <input type="submit" class="submit" value="Sign Up"> 
+                </div>
+                <p>&copy; 2022 All Rights Reserved.</p>
+            </div>
+    </div>
+
+    
+
+    <!-- Script Links -->
+    <script src="https://kit.fontawesome.com/29382277be.js" crossorigin="anonymous"></script>
+</body>
+</html>

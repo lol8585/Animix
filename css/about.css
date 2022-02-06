@@ -1,0 +1,32 @@
+@import "footer.css";
+
+/* --------- Header --------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    background-image: var(--header);
+    color: white;
+    transform: scale(1);
+    z-index: 100000;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*margin-left: 10px;*/
+    transition: .3s;
+}
+.title img {
+    width: 50px;
+}
+.header h1 {
+    font-family: var(--head_font);
+    margin-left: 10px;
+}
+

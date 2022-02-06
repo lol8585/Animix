@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="shortcut icon" href="images/icon.png">
+    <h1> <a href="home.html">Animix</a></h1>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header" id="header">
+        <div class="title">
+            <i class="fas fa-angle-right fa-2x" onclick="openSB()" id="arrow"></i>
+            <img src="images/icon.png">
+            <h1>Animix</h1>
+        </div>
+        <i class="fas fa-home home" id="home"></i>
+        <nav id="navbar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blank_page.html">Albums</a></li>
+                <li><a href="blank_page.html">Library</a></li>
+                <li><a href="blank_page.html">Services</a></li>
+                <li><a class="signUp" href="Login.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- Left SideBar -->
+    <div class="sidebar" id="sidebar">
+        <i class="fas fa-times cross" onclick="closeSideB()"></i>
+        <h2>Music List</h2>
+        <div class="sidebar_tabs">
+            <a href="home.html">Anime</a>
+            <a href="hollywood.html">Hollywood</a>
+            <a href="bollywood.html">Bollywood</a>
+            <a href="#" class="future">Pop</a>
+            <a href="#" class="future">Rap</a>
+        </div>
+    </div>
+
+    <div class="wholepage" id="wholepage">
+
+        <!-- Middle Content -->
+        <div class="mid_content" id="mid_content">
+            <h2>Bollywood</h2>
+            <div class="content_grid">
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="1"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="2"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="3"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="4"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="5"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="6"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="7"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="8"></i>
+                    </div>
+                </div>
+
+                <div class="songCard">
+                    <img>
+                    <div class="songname">
+                        <p class="songCardName"></p>
+                        <i class="fas fa-play songCardButton" id="9"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_music_player" id="bottom_music_player">
+            <i class="fas fa-angle-down down_arrow" id="down_arrow"></i>
+            <div class="nameImg">
+                <img src="images/sample.png" class="playingImage" id="playingImage">
+                <p id="music_playing">Your Name</p>
+            </div>
+
+            <div class="seekbar_and_icons">
+                <input type="range" id="seekBar" class="range" min="0" , max="100" , value="0">
+                <div class="music_control_icons">
+                    <i class="fas fa-backward backward" id="previous"></i>
+                    <i class="fas fa-play" id="bottomPlayButton"></i>
+                    <i class="fas fa-forward forward" id="next"></i>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer" id="footer">
+            <div class="icons">
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-youtube fa-2x"></i>
+            </div>
+            <p class="credits">Website Created by Raman & Aman</p>
+            <p class="copyright">&copy; 2022 All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Script Links -->
+    <script src="https://kit.fontawesome.com/29382277be.js" crossorigin="anonymous"></script>
+    <script src="javascript/bollywood.js"></script>
+    <script src="javascript/navbar.js"></script>
+</body>
+
+</html>
