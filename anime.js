@@ -35,7 +35,7 @@ function songFunction(song, i) {
 
 // Declaring Variables
 songNumber = 0;
-audioElement = new Audio('../songs/1.mp3');
+audioElement = new Audio('songs/anime/1.mp3');
 bottom_music_player = document.getElementById('bottom_music_player');
 bottomPlayButton = document.getElementById("bottomPlayButton");
 seekBar = document.getElementById("seekBar");
