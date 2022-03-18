@@ -1,7 +1,11 @@
 // Scroll Button
 scrollToContent = document.getElementById('scrollToContent');
+
 scrollToContent.addEventListener('click', function () {
-  window.scrollTo(0, 922);
+  var mid_content = document.getElementById("mid_content")
+  mid_content_OffsetTop = mid_content.offsetTop;
+  console.log(mid_content_OffsetTop);
+  window.scrollTo(0, (mid_content_OffsetTop - 50)) 
 })
 
 
