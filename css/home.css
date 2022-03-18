@@ -83,7 +83,7 @@
 
 /* --------- Welcome Page --------- */
 .welcomePage {
-    height: 110vh;
+    min-height: 100vh;
     background-image: linear-gradient(315deg, #44a4fd 0%, #380036 74%);
     background-position: right;
     background-size: 300%;
@@ -92,7 +92,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: -150px;
     animation: animate 10s linear infinite;
 }
 @keyframes animate {
@@ -104,12 +103,14 @@
 .welcomePage h1 {
     font-size: clamp(54px, 7vw, 8vw);
     font-family: var(--nav_font);
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .welcomePage h2 {
     font-size: clamp(33px, 4vw, 50px);
     font-family: var(--sidebar_font);
-    margin: 2px 0;
 }
 .welcomePage p {
     font-size: clamp(20px, 2vw, 30px);
@@ -118,19 +119,19 @@
 .scrollToContent {
     color: white;
     padding: 20px 21.4px;
-    position: absolute;
-    bottom: 120px;
-    background: rgb(32, 106, 216);
+    background: rgb(46, 116, 219);
+    margin-top: clamp(15vh, 7vh, 5px);
     border-radius: 50%;
     font-size: 40px;
     cursor: pointer;
     opacity: .76;
     animation: scrollAnimation 2s linear infinite;
-    box-shadow: 0px 0px 5px 2px white;
+    box-shadow: 0px 0px 12px 2px white;
     transition: .2s;
 }
 .scrollToContent:hover {
     box-shadow: 0px 0px 20px 3px white;
+    background: rgb(19, 88, 192);
 }
 
 /* --------- Mid Content --------- */
